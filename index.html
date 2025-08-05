@@ -7,10 +7,62 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="content">
+    <nav class="tabs">
+        <button class="tab-link active" data-tab="home">Home</button>
+        <button class="tab-link" data-tab="projects">Projects</button>
+        <button class="tab-link" data-tab="commissions">Commissions</button>
+        <button class="tab-link" data-tab="about">About</button>
+        <button class="tab-link" data-tab="contact">Contact</button>
+    </nav>
+
+    <section id="home" class="tab-content active">
         <h1>Welcome to My Portfolio</h1>
         <p>This is a showcase of my work.</p>
-    </div>
+        <img src="https://via.placeholder.com/600x300" alt="Sample portfolio image">
+    </section>
+
+    <section id="projects" class="tab-content">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project">
+                <img src="https://via.placeholder.com/300" alt="Project 1">
+                <h3>Project One</h3>
+                <p>Brief description of the project.</p>
+            </div>
+            <div class="project">
+                <img src="https://via.placeholder.com/300" alt="Project 2">
+                <h3>Project Two</h3>
+                <p>Brief description of the project.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="commissions" class="tab-content">
+        <h2>Commissions</h2>
+        <p>Interested in a commission? Reach out with your ideas and let's create something great together.</p>
+    </section>
+
+    <section id="about" class="tab-content">
+        <h2>About Me</h2>
+        <p>Insert a short bio or profile information here.</p>
+    </section>
+
+    <section id="contact" class="tab-content">
+        <h2>Contact Me</h2>
+        <form class="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Send</button>
+        </form>
+    </section>
+
     <script src="script.js"></script>
 </body>
 </html>
